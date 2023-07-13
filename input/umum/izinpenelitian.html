@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 
 <head>
   <meta charset="utf-8">
@@ -23,6 +24,9 @@
   <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -70,6 +74,7 @@
             <ul>
               <li><a href="../index.html#services">Layanan Umum</a></li>
               <li><a href="../index.html#services">Layanan Bio Penduduk</a></li>
+              <li><a href="../index.html#services">Layanan Pindah</a></li>
               <li><a href="../index.html#services">Layanan Kelahiran</a></li>
               <li><a href="../index.html#services">Layanan Kematian</a></li>
               <li><a href="../index.html#services">Layanan Nikah</a></li>
@@ -111,202 +116,82 @@
 
         <div class="section-title">
           <h2>Layanan Umum</h2>
+          <h3>Surat Keterangan Belum Menerima KIS</h3>
+          <p>Isi formulir dibawah ini dengan benar sesuai dengan data yang dibutuhkan.</p>
         </div>
 
         <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="../input/umum/kuasa_umum1.html">Surat Kuasa</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+          <form>
+            <div class="info-form">
+              <h3>Pihak Pengaju</h3>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="../input/umum/skck_umum2.html">Surat Pengantar SKCK</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+            <div class="form-group">
+              <label for="kk1">No. KK</label>
+              <input type="text" class="form-control" id="kk1" placeholder="No. KK">
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="../input/umum/belummenerimakis_umum3.html">Surat Keterangan Belum Menerima KIS</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+            <div class="form-group">
+              <label for="nik1">No. KTP</label>
+              <input type="text" class="form-control" id="nik" placeholder="No. KTP">
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Izin Penelitian dan Rekomendasi Penelitian</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+            <div class="form-group">
+              <label for="nama1">Nama Lengkap</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Kepemilikan Kapal</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="tempat_lahir1">Tempat Lahir</label>
+                <input type="text" class="form-control" id="tempat_lahir" placeholder="Tempat Lahir">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="tanggal_lahir1">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggal_lahir" placeholder="tanggal_lahir">
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Permohonan Dispensasi Pondok Pesantren</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+            <div class="form-group">
+              <label for="kis1">No. KIS</label>
+              <input type="text" class="form-control" id="kis1" placeholder="No. KIS">
             </div>
-          </div>
+            <div class="form-group">
+              <label for="kelamin">Jenis Kelamin</label>
+              <select class="form-control" name="kelamin">
+                <option selected>Pilih Jenis Kelamin </option>
+                <option>Laki-laki</option>
+                <option>Perempuan</option>
+              </select>
+            </div>   
+            <div class="form-group">
+              <label for="shdk">Status Hubungan Anggota Keluarga dengan Kepala Keluarga</label>
+              <select class="form-control" name="shdk">
+                <option selected>Pilih</option>
+                    <option>KEPALA KELUARGA</option>
+                    <option>SUAMI</option>
+                    <option>ISTRI</option>
+                    <option>ANAK</option>
+                    <option>MENANTU</option>
+                    <option>CUCU</option>
+                    <option>ORANG TUA</option>
+                    <option>MERTUA</option>
+                    <option>FAMILI LAIN</option>
+                    <option>PEMBANTU</option>
+                    <option>LAINNYA</option>
+            </select>
+            </div>   
+            <div class="form-group">
+              <label for="alamat1">Alamat Lengkap</label>
+              <input type="text" class="form-control" id="alamat" placeholder="Contoh : Dusun Laok Tambak RT 005/ RW 009 Desa Padelegan Kecamatan Pademawu Kabupaten Pamekasan">
+            </div> 
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Penghasilan Orang Tua</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
+
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Apakah data anda sudah benar ?
+                </label>
+              </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Punya Ijazah</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href=""> Surat Keterangan Usaha</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Ahli Waris</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Mampu untuk Bayi</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Mampu untuk Pelajar</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Mampu untuk BPJS</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Mampu Umum</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Bepergian</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Penggunaan Solar Nelayan</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Bersih Diri</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Hilang</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Aktif Belajar</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Jalan Berpergian</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Tidak Bekerja</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div> 
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Wali</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Pernyataan Penyerahan Anak</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx  bx-file"></i></div>
-              <h4><a href="">Surat Keterangan Beda Nama</a></h4>
-              <p>Klik di sini untuk mengakses jenis surat terkait</p>
-            </div>
-          </div>
-
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
 
         <div class="section-title">
